@@ -60,5 +60,9 @@ int main(void)
 	}
 	
 	printf("Demo files cleared: %zi\n", res);
+	
+#if defined(_WIN32) || defined(__WIN32)
+	system("PAUSE");
+#endif
 	return EXIT_SUCCESS;
 }
